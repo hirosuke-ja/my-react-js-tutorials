@@ -36,3 +36,6 @@ jobs:
           echo test, and deploy your project.
           BRANCH=${GITHUB_REF##*/}
           echo $BRANCH
+          if [[ "$BRANCH" = "master" ]]; then
+            echo this is master branch
+          fi
